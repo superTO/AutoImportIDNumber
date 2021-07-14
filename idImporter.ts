@@ -14,6 +14,13 @@
                         inputEl.dispatchEvent(new Event('change'));
                     }
                 }, 1000);
+
+                let submitEl = (event.target as Element).querySelector('[role="button"]');
+                submitEl.addEventListener('click', () => {}, false);
+
+                setTimeout(() => {
+                    submitEl.dispatchEvent(new Event('click'));
+                }, 3000);
             }
         }
     });

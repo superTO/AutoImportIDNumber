@@ -24,6 +24,15 @@
                     inputEl.dispatchEvent(new Event('change'));
                 }
             }, 1000);
+
+            let submitEl = event.target.querySelector('[role="button"]');
+            
+            submitEl.addEventListener('click',function () {
+            }, false);
+
+            setTimeout(() => {
+                submitEl.dispatchEvent(new Event('click'));
+            }, 3000);
         }
     });
 })();
