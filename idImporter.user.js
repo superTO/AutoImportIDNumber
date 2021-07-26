@@ -27,11 +27,12 @@
 
             let submitEl = event.target.querySelector('[role="button"]');
             
-            submitEl.addEventListener('click',function () {
-            }, false);
+            // submitEl.addEventListener('click',function () {
+            // }, false);
 
             setTimeout(() => {
-                submitEl.dispatchEvent(new Event('click'));
+                // submitEl.dispatchEvent(new Event('click'));
+                submitEl.click();
             }, 3000);
         }
     });

@@ -4,6 +4,8 @@
   "description": "在gmail開啟.pdf檔時, 自動輸入身分證字號.",
   "main": "idImporter.user.js",
   "scripts": {
+    "build": "tsc --outFile idImporter.user.js idImporter.ts",
+    "start-dev": "npm run build -- --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

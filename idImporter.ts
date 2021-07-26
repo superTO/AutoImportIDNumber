@@ -8,14 +8,14 @@
                 setTimeout(() => {
                     let J = JSON.parse((document.querySelector('#drive-active-item-info') as HTMLElement).innerText);
                     if (/\.pdf$/i.test(J.title)) {
-                        let inputEl: HTMLInputElement = (event.target as Element).querySelector('[type="password"]');
+                        let inputEl = (event.target as Element).querySelector('[type="password"]') as HTMLInputElement;
     
                         inputEl.value = IDNumber;
                         inputEl.dispatchEvent(new Event('change'));
                     }
                 }, 1000);
 
-                let submitEl = (event.target as Element).querySelector('[role="button"]');
+                let submitEl = (event.target as Element).querySelector('[role="button"]') as HTMLInputElement;
                 submitEl.addEventListener('click', () => {}, false);
 
                 setTimeout(() => {
